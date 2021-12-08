@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <link href='C:\ani\course\HTML web dev\HTML\projects\proj4.css' rel='stylesheet' type='text/css'>
+    </head>
+    <Header>
+        <h1 id="title"> Folklore album purchase</h1>
+    </Header>
+    <body>
+        <p id="description">
+            Fill the details below to complete your album order
+        </p>
+
+        <form id="survey-form">
+            <div class="input-headings">
+                <label for="name" id="name-label"> Name </label>
+                <input id="name" type="text" name="name" placeholder="eg:Sanjana Urs" class="form-inputs" required> </input>
+                <br>
+                <label for="email" id="email-label"> Email </label>
+                <input id="email" type="email" name="email" placeholder="eg:sanjanaurs@gmail.com" class="form-inputs" required> </input>
+              <br>
+                <label for="number" id="number-label"> enter the no. of albums to be purchased </label>
+                <input id="number" type="number" name="number" min="1" max="500" placeholder="" class="form-inputs" required> </input>
+              <br>
+
+              <label for="dropdown" id="model" style="width: 90vw;"> Select version </label>
+                    <select id="dropdown">
+                        <option value = "version_A"> ver A</option>
+                        <option value = "version_B"> Ver B</option>
+                        <option value = "version_C"> Ver C</option>
+                        <option value = "version_d"> Ver D</option>
+                     </select>
+                     <br>   
+
+             <label for="version_type" id="version_type"> <b>Album type: </b> </label>
+                 <br>
+                   <input id="version_type" type="radio" name="ver_type" value="photobook">
+                   <label for="version_type"> Photobook </label>
+                     <br>
+                       <input id="version_type" type="radio" name="ver_type" value="film">
+                       <label for="version_type"> Film </label>
+                     <br>
+                       <input id="version_type" type="radio" name="ver_type" value="vinyl">
+                       <label for="version_type"> Vinyl </label>
+                     <br>
+                     <br>    
+             <label for="features"> <b>Extras:</b></label>
+                 <br>
+                    
+                  <input id="checkbox" type="checkbox" name="features" value="poster">
+                      <label for="checkbox"> Poster</label>
+                      <br>
+                      <input id="checkbox" type="checkbox" name="features" value="signed_postcard">
+                      <label for="checkbox"> Signed postcard</label>
+                      <br>
+                      <input id="checkbox" type="checkbox" name="features" value="membership">
+                      <label for="checkbox"> Membership_card </label>          
+                    <br>
+                    <br>      
+         <label id="textarea">Address: </label>
+                <br>
+                  <textarea id="textarea" name="address" rows="5" cols="59.5">
+                </textarea>
+                     <br>                      
+        <input id="submit" type="submit" value="Place Order" class="submit-button">             
+                           
+            </div>
+        </form>
+    </body>
+</html>
